@@ -1,0 +1,47 @@
+//Variables
+$desaturated-blue: hsl(238, 29%, 16%);
+$soft-red: hsl(14, 88%, 65%);
+//Background gradient:
+$soft-violet: hsl(273, 75%, 66%);
+$soft-blue: hsl(240, 73%, 65%);
+//Text
+$very-dark-grayish-blue: hsl(237, 12%, 33%);
+$dark-grayish-blue: hsl(240, 6%, 50%);
+//Dividers
+$light-grayish-blue: hsl(240, 5%, 91%);
+* {
+    box-sizing: border-box;
+    font-family: "Kumbh Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient($soft-violet, $soft-blue);
+    height: 100%;
+    overflow: hidden;
+    //centering a div has never been easier! Look below:
+    display: grid;
+    place-items: center;
+}
+
+.flexbox-container {
+    background-color: $light-grayish-blue;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    max-width: 1000px;
+    height: 65%;
+    margin: auto;
+}
+
+.attribution {
+    display: none;
+}
