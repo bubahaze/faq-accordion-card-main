@@ -19,10 +19,19 @@ body {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  position: relative;
+}
+
+.box {
+  position: absolute;
+  left: 32vh;
+  top: 42vh;
+  z-index: 3;
+  max-width: 25vh;
 }
 
 .flexbox-container {
-  background-color: #e7e7e9;
+  background-color: #fcfcfd;
   border-radius: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -37,6 +46,33 @@ body {
   max-width: 1000px;
   height: 65%;
   margin: auto;
+  overflow: hidden;
+}
+
+.woman-image {
+  position: relative;
+}
+
+.illustration {
+  position: relative;
+  z-index: 1;
+  left: -10vh;
+  max-width: 62vh;
+}
+
+.pattern {
+  position: absolute;
+  z-index: 0;
+  left: -80vh;
+  bottom: -30vh;
+  width: 130vh;
+  max-width: 130vh;
+}
+
+.faq {
+  margin-right: 4rem;
+  height: 80%;
+  width: 40%;
 }
 
 .attribution {
