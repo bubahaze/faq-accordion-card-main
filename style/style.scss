@@ -32,6 +32,38 @@ body {
     //z-index: 1;
 }
 
+h1 {
+    color: $desaturated-blue;
+    font-size: 2.7rem;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+h4 {
+    color: $very-dark-grayish-blue;
+    font-size: 1.4rem;
+    font-weight: 400;
+    width: 30rem;
+    max-width: 30rem;
+    padding: 1.5rem 0;
+    display: inline-block;
+}
+
+p {
+    font-size: 1.3rem;
+    color: $dark-grayish-blue;
+    display: none;
+}
+
+.pressed {
+    display: block;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid $light-grayish-blue;
+}
+
 .box {
     //problem ze skalowaniem - zostaje w miejscu, ale gdy tam go do flex-container to obetnie boki przez overflow: hidden...
     position: absolute;
@@ -50,7 +82,7 @@ body {
     align-items: center;
     width: 60%;
     max-width: 1000px;
-    height: 65%;
+    height: 70%;
     margin: auto;
     overflow: hidden;
     //position: relative;
@@ -66,8 +98,8 @@ body {
 .illustration {
     position: relative;
     z-index: 1;
-    left: -10vh;
-    //top: 0;
+    left: -20vh;
+    top: -2vh;
     max-width: 62vh;
 }
 
@@ -81,9 +113,16 @@ body {
 }
 
 .faq {
-    margin-right: 4rem;
+    //margin: 8rem 4rem;
     height: 80%;
     width: 40%;
+    //font-size: 1.5rem;
+}
+
+.question {
+    img {
+        justify-self: end;
+    }
 }
 
 .attribution {
