@@ -55,10 +55,9 @@ p {
     display: none;
 }
 
-.pressed {
-    display: block;
-}
-
+// .pressed {
+//     display: block;
+// }
 hr {
     border: none;
     border-top: 1px solid $light-grayish-blue;
@@ -119,9 +118,14 @@ hr {
     //font-size: 1.5rem;
 }
 
-.question {
-    img {
-        justify-self: end;
+.question {}
+
+.show-answer {
+    p {
+        display: block;
+    }
+    .arrow {
+        transform: rotate(180deg);
     }
 }
 

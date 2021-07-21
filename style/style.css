@@ -45,10 +45,6 @@ p {
   display: none;
 }
 
-.pressed {
-  display: block;
-}
-
 hr {
   border: none;
   border-top: 1px solid #e7e7e9;
@@ -107,9 +103,13 @@ hr {
   width: 40%;
 }
 
-.question img {
-  -ms-grid-column-align: end;
-      justify-self: end;
+.show-answer p {
+  display: block;
+}
+
+.show-answer .arrow {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .attribution {
